@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.eclipse.example.mymodel/src" modelPluginID="org.eclipse.example.mymodel"
+    modelName="MyModel" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>myModel.ecore</foreignModel>
+  <genPackages prefix="MyModel" disposableProviderFactory="true" ecorePackage="myModel.ecore#/">
+    <genClasses ecoreClass="myModel.ecore#//Computer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myModel.ecore#//Computer/brand"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myModel.ecore#//Computer/cpu"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myModel.ecore#//Computer/memories"/>
+    </genClasses>
+    <genClasses ecoreClass="myModel.ecore#//CPU">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myModel.ecore#//CPU/speed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myModel.ecore#//CPU/brand"/>
+    </genClasses>
+    <genClasses ecoreClass="myModel.ecore#//Memory">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myModel.ecore#//Memory/brand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myModel.ecore#//Memory/size"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
