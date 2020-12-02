@@ -63,4 +63,8 @@ public class MemoryTest{
 		return fixture;
 	}
 
+	public void testMemoryValidType() {	
+		Memory memory = MyModelFactory.eInstance.createMemory();	
+		assertThat(memory, instanceOf(Memory.class));
+    	}
 } //MemoryTest
