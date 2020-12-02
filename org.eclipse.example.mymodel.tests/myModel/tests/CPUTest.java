@@ -64,4 +64,8 @@ public class CPUTest{
 		return fixture;
 	}
 
+	public void testCpuValidType() {	
+		CPU cpu = MyModelFactory.eInstance.createCPU();
+		assertThat(cpu, instanceOf(CPU.class));
+   	}
 } //CPUTest
